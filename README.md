@@ -10,6 +10,7 @@ in order to create a simple Mathematics agent.
 
 I wrote an article which explores some of the basic concepts around Agents here, as well as walks through how
 to build out the below script
+[Can read that here](https://medium.com/@ssmaameri/building-a-simple-agent-with-tools-and-toolkits-in-langchain-77e0f9bd1fa5)
 
 ## Getting started
 Clone the repository, set up the virtual environment, and install the required packages
