@@ -46,13 +46,13 @@ prompt = ChatPromptTemplate.from_messages(
 llm = ChatOpenAI(model="gpt-3.5-turbo-1106", temperature=0)
 
 # Setup the toolkit
-tools = [add, multiply, square]
+toolkit = [add, multiply, square]
 
 # Construct the OpenAI Tools agent
-agent = create_openai_tools_agent(llm, tools, prompt)
+agent = create_openai_tools_agent(llm, toolkit, prompt)
 
 # Create an agent executor by passing in the agent and tools
-agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
+agent_executor = AgentExecutor(agent=agent, tools=toolkit, verbose=True)
 
 yellow = "\033[0;33m"
 green = "\033[0;32m"
